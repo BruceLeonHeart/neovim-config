@@ -18,8 +18,8 @@ return {
 		{
 			"<leader>gf",
 			vim.lsp.buf.format,
-			{ "n", "v" },
-			{},
+			mode =  {"n", "v" },
+			desc = "Code Formater",
 		},
 	},
 }

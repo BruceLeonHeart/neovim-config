@@ -1,2 +1,2 @@
 1.require ripgrep install
-2.install formatter in Mason manually (stylua)
+2.install formatter in Mason manually (stylua,clang-formart)

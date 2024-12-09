@@ -1,15 +1,16 @@
+vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
 local opt = vim.opt
+vim.b.autoformat = true
 vim.opt.expandtab = true
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.softtabstop = 2
-vim.api.nvim_create_autocmd({"FileType"}, {
-    pattern = {"c", "cpp", "md", "txt", "c.snippets", "cpp.snippets","py"},
-    callback = function()
-        vim.b.autoformat = true
-        vim.opt.tabstop = 4
-        vim.opt.shiftwidth = 4
-        vim.opt.softtabstop = 4
-    end,
+vim.api.nvim_create_autocmd({ "FileType" }, {
+	pattern = { "c", "cpp", "md", "txt", "c.snippets", "cpp.snippets", "py" },
+	callback = function()
+		vim.opt.tabstop = 4
+		vim.opt.shiftwidth = 4
+		vim.opt.softtabstop = 4
+	end,
 })
-
